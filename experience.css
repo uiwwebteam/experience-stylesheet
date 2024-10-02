@@ -1,0 +1,293 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #ffffff; /* Darker gray background */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0px;
+}
+body.quicklinks {
+    background-color: #aa1010;
+}
+.card {
+	background-color: #ffffff; /* White card background */
+	color: #1e1e1e; /* Dark text color */
+	width: 100%;
+	height: 86%;
+	padding: 20px;
+	text-align: center;
+	position: relative;
+}
+.card .banner-link{
+  text-decoration:none;
+}
+.card .icon {
+	font-size: 50px;
+	color: #aa1010; /* Red icon color */
+	margin-bottom: 20px;
+}
+.card h2 {
+	font-size: 20px;
+	margin-bottom: 10px;
+	color: #1e1e1e;
+}
+.card p {
+	font-size: 16px;
+	line-height: 1.5;
+	color: #1e1e1e;
+}
+.card .services {
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px; /* Adjusted gap for better spacing */
+	
+}
+.card .onecolservices {
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 10px; /* Adjusted gap for better spacing */
+	
+}
+.card .service {
+	text-decoration: none;
+	color: #1e1e1e;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: color 0.3s;
+	padding: 10px;
+	border: 1px solid #aa1010;
+	border-radius: 5px;
+	background-color: #ffffff;
+}
+.card .service:hover {
+	background-color: #eeeeee; /* Slightly darker gray on hover */
+}
+.card .service .icon {
+	font-size: 20px; /* Reduced icon size */
+	margin-bottom: 5px;
+	color: #aa1010; /* White icon color */
+}
+.card .service .label {
+	font-size: 12px; /* Reduced label font size */
+	text-align: center;
+}
+.assignments{
+	color: #000000; /* Black text color */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 10px; /* Gap between assignments */
+	overflow-y: auto; /* Scroll if content overflows */
+}
+.assignment {
+	background-color: #ffffff; /* White background */
+	color: #000000; /* Black text color */
+	font-size: 0.875rem;
+	padding: 10px;
+	border: 1px solid #aa1010; /* Red border */
+	border-radius: 5px;
+	text-align: left;
+}
+.assignment strong {
+	color: #000000; /* Red color for strong text */
+	margin-right: 5px;
+}
+.assignment a {
+	color: #aa1010; /* Red link color */
+	text-decoration: none;
+}
+.assignment a:hover {
+	text-decoration: underline;
+}
+.assignment.due {
+	 background-color: #aa1010; 
+	 border-color: #aa1010; 
+	 color: #ffffff; 
+}  
+.assignment.due a{
+	color: #ffffff; 
+}
+
+/* quicklink cards */
+.quicklaunch {
+	background-color: #aa1010; /* Lighter gray card background */
+	color: #ffffff; /* Dark text color */
+	width: 100%;
+	height:86%;
+	padding: 20px;
+	text-align: center;
+	position: relative;
+}
+.quicklaunch .icon {
+	font-size: 50px;
+	color: #ff0000; /* Red icon color */
+	margin-bottom: 20px;
+}
+.quicklaunch p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+.quicklaunch .applications {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.quicklaunch .application {
+	text-decoration: none;
+	color: #aa1010; /* Dark text color */
+	display: flex;
+	align-items: center;
+	transition: background-color 0.3s, color 0.3s;
+	padding: 12px;
+	border-radius: 5px;
+	background-color: #ffffff; /* Light gray background */
+}
+.quicklaunch .application:hover {
+	background-color: #eeeeee; /* Slightly darker gray on hover */
+}
+.quicklaunch .application .icon {
+	font-size: 30px;
+	margin-right: 10px;
+	color: #ff0000; /* Red icon color */
+}
+.quicklaunch .application .label {
+	font-size: 14px;
+	text-align: left;
+	flex: 1;
+	margin-left: 10px; /* Adding margin between icon and label */
+	color:#000000;
+}
+
+/* o365 styling */
+.o365card {
+	background-color: #ffffff; /* White card background */
+	color: #1e1e1e; /* Dark text color */
+	width: 100%;
+	height: 86%;
+	padding: 20px;
+	text-align: center;
+	position: relative;
+}
+.o365card .o365applications {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* Two columns */
+	grid-template-rows: repeat(4, 1fr); /* Four rows */
+	gap: 10px; /* Gap between grid items */
+	margin-top: 10px; /* Margin for grid */
+}
+.o365card .o365application {
+	text-decoration: none;
+	color: #ffffff; /* White text color */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0px;
+	border-radius: 5px;
+	transition: background-color 0.3s, color 0.3s;
+	height: 50px; /* Adjusted height for grid items */
+	border: 1px solid #dddddd; /* Light border */
+}
+.o365card .o365application:hover {
+	filter: brightness(80%); /* Darken on hover */
+}
+.o365card .o365application .icon {
+	font-size: 14px; /* Adjusted icon size */
+	color: #ffffff; /* White icon color */
+	margin-bottom: 3px; /* Margin for icon */
+}
+.o365card .o365application .label {
+	font-size: 12px; /* Adjusted label font size */
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.o365card .services {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px; /* Adjusted gap for better spacing */
+}
+.o365card .service {
+	text-decoration: none;
+	color: #ffffff; /* White font color */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center; /* Center content vertically */
+	transition: background-color 0.3s, color 0.3s;
+	height: 85%; /* Reduced height */
+	padding: 10px;
+	border-radius: 5px;
+}
+.o365card .service:hover {
+	filter: brightness(0.9); /* Slightly darker on hover */
+}
+.o365card .service .icon {
+	font-size: 20px; /* Reduced icon size */
+	margin-bottom: 5px;
+}
+.o365card .service .label {
+	font-size: 12px; /* Reduced label font size */
+	text-align: center;
+}
+.power-automate {
+	background-color: #0066CC; /* Power Automate color */
+}
+.power-apps {
+	background-color: #742774; /* Power Apps color */
+}
+.power-bi {
+	background-color: #F2C811; /* Power BI color */
+	color: #000000; /* Black font color for better readability on yellow background */
+}
+.outlook {
+	background-color: #0072c6; /* Outlook blue */
+}
+.excel {
+	background-color: #217346; /* Excel green */
+}
+.word {
+	background-color: #2b5797; /* Word blue */
+}
+.portal {
+	background-color: #ce352c; /* Portal red */
+}
+.onedrive {
+	background-color: #008272; /* OneDrive teal */
+}
+.teams {
+	background-color: #6264a7; /* Teams purple */
+}
+.powerpoint {
+	background-color: #d24726; /* PowerPoint orange */
+}
+.calendar {
+	background-color: #6c9f40; /* Calendar green */
+}
+.ellucian {
+	background-color: #682673; /* Ellucian Purple */
+}
+.degreeworks {
+	background-color: #5352d1; /* Ellucian Bright Purple */
+}
+.bannerblue {
+	background-color: #0966c5; /* Ellucian blue */
+}
+.argos {
+	background-color: #e13c21; /* Argos red */
+}
+.banner {
+	background-color: #3b39b6; /* dark purple */
+}
+.formfusion {
+	background-color: #f5811d; /* formfusion orange */
+}
